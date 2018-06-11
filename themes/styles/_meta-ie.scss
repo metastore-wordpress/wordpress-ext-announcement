@@ -1,0 +1,25 @@
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+	.announcement-grid {
+		display: flex;
+		.announcement-cover {
+			margin-right: 2rem;
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+	.widget.wp-ext-announcement {
+		.announcement-grid {
+			.announcement-cover {
+				margin-right: 2rem;
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+	}
+}

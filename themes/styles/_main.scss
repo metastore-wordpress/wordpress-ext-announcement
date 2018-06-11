@@ -1,0 +1,137 @@
+.wp-ext-announcement {
+	.announcement-grid {
+		display: grid;
+		grid-gap: 0 2rem;
+		grid-template-columns: min-content 1fr;
+	}
+	.entry-title {
+		font-size: 2rem;
+	}
+	.announcement-content {
+		margin-bottom: 4rem;
+		section {
+			margin-top: 4rem;
+		}
+	}
+	.announcement-cover {
+		a {
+			$bg_color: hsl(0, 0%, 96%);
+			$size: 16rem;
+
+			display: grid;
+			background: $bg_color no-repeat 50%;
+			background-size: cover;
+			border: .5rem solid $bg_color;
+			border-radius: .4rem;
+			width: $size;
+			height: $size;
+			i {
+				font-size: ($size / 2);
+				color: hsl(0, 0%, 86%);
+				align-self: center;
+				justify-self: center;
+			}
+		}
+	}
+	.announcement-storage {
+		&-content {
+			background: hsl(0, 0%, 96%);
+			border-radius: .4rem;
+			padding: 2rem;
+		}
+		.field {
+			display: block;
+			padding: 1rem 0;
+		}
+		.field-value {
+			margin: 1rem 0;
+			text-align: justify;
+			&:first-child {
+				margin-top: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.file-title {
+			font-size: 1.6rem;
+			text-transform: uppercase;
+		}
+		.file-hash {
+			display: grid;
+			grid-template-columns: 1fr 4rem;
+			background: hsl(0, 0%, 100%);
+			border-radius: .4rem;
+			padding: .5rem;
+			div:first-child {
+				font-family: monospace;
+				overflow: hidden;
+			}
+			div:last-child {
+				color: hsl(0, 0%, 86%);
+				cursor: help;
+				text-align: right;
+			}
+		}
+	}
+	.announcement-gallery {
+		$bg_color: hsl(0, 0%, 96%);
+
+		border-radius: .4rem;
+		margin-bottom: 6rem;
+		.announcement-gallery-content {
+			display: grid;
+			grid-gap: 2rem;
+			grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+			background: $bg_color;
+			padding: 2rem;
+			a {
+				display: inline-block;
+				background: #fff;
+				border: .1rem solid #ddd;
+				padding: .5rem;
+			}
+		}
+	}
+}
+
+.single.wp-ext-announcement {
+	main {
+		.entry-title {
+			font-size: 2rem;
+		}
+	}
+}
+
+.widget.wp-ext-announcement {
+	.announcement-grid {
+		display: grid;
+		grid-gap: 0 2rem;
+		grid-template-columns: min-content 1fr;
+	}
+	.announcement-cover {
+		a {
+			$bg_color: hsl(48, 100%, 67%);
+			$size: 8rem;
+
+			display: grid;
+			background: $bg_color no-repeat 50%;
+			background-size: cover;
+			border: .5rem solid $bg_color;
+			border-radius: .4rem;
+			width: $size;
+			height: $size;
+			i {
+				font-size: ($size / 2);
+				color: hsl(0, 0%, 100%);
+				align-self: center;
+				justify-self: center;
+			}
+		}
+	}
+	.announcement-title {
+		a {
+			color: #333;
+		}
+	}
+}
